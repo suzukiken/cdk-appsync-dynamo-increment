@@ -1,0 +1,14 @@
+{
+  "version" : "2017-02-28",
+  "operation" : "UpdateItem",
+  "key" : {
+    "id" : $util.dynamodb.toDynamoDBJson($context.arguments.input.id)
+  },
+  "update" : {
+    "expression" : "SET title = :title ADD version :one",
+    "expressionValues": {
+      ":title" : $util.dynamodb.toDynamoDBJson($context.arguments.input.title),
+      ":one" : { "N": 1 }
+    }
+  }
+}
