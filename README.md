@@ -5,4 +5,4 @@ To deploy AppSync GraphQL API and a Dynamo DB Table in which have incremental fi
 * `npm install`
 * `cdk deploy`
 
-[description](https://figmentresearch.com/aws/cdkappsync-dynamo-increment)
+[description](https://note.figmentresearch.com/aws/cdkappsync-dynamo-increment)
